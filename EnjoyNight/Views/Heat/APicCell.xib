@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="226" id="KGk-i7-Jjw" customClass="APicCell" customModule="EnjoyNight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="408" height="225"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-CM-Cy4">
+                        <rect key="frame" x="5" y="175" width="398" height="50"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Label">
+                                <attributes>
+                                    <color key="NSColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-E3-U0F">
+                        <rect key="frame" x="0.0" y="5" width="408" height="170"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="RE1-E3-U0F" secondAttribute="bottom" constant="50" id="Jks-3t-RRL"/>
+                    <constraint firstItem="wYF-CM-Cy4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="OXP-Ia-9fq"/>
+                    <constraint firstAttribute="trailing" secondItem="RE1-E3-U0F" secondAttribute="trailing" id="XPW-MP-woz"/>
+                    <constraint firstItem="wYF-CM-Cy4" firstAttribute="top" secondItem="RE1-E3-U0F" secondAttribute="bottom" id="brO-o0-sgj"/>
+                    <constraint firstItem="RE1-E3-U0F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gIk-os-EL0"/>
+                    <constraint firstItem="RE1-E3-U0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="hzO-fd-tMV"/>
+                    <constraint firstAttribute="bottom" secondItem="wYF-CM-Cy4" secondAttribute="bottom" id="j0y-dU-a1p"/>
+                    <constraint firstAttribute="trailing" secondItem="wYF-CM-Cy4" secondAttribute="trailing" constant="5" id="pzk-Sh-hzp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mainImageView" destination="RE1-E3-U0F" id="g0o-RD-hTq"/>
+                <outlet property="picDetailLabel" destination="wYF-CM-Cy4" id="gH0-FS-nvY"/>
+            </connections>
+            <point key="canvasLocation" x="316" y="258"/>
+        </tableViewCell>
+    </objects>
+</document>
